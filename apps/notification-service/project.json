@@ -1,0 +1,15 @@
+{
+  "name": "notification-service",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/notification-service/src",
+  "projectType": "application",
+  "tags": ["type:app"],
+  "targets": {
+    "serve": {
+      "command": "npx tsx apps/notification-service/src/main.ts"
+    },
+    "build": {
+      "command": "npx tsc --noEmit"
+    }
+  }
+}

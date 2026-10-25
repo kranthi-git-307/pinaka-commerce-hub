@@ -1,0 +1,15 @@
+{
+  "name": "analytics-service",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/analytics-service/src",
+  "projectType": "application",
+  "tags": ["type:app"],
+  "targets": {
+    "serve": {
+      "command": "npx tsx apps/analytics-service/src/main.ts"
+    },
+    "build": {
+      "command": "npx tsc --noEmit"
+    }
+  }
+}
